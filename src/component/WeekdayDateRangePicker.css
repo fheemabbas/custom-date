@@ -1,0 +1,122 @@
+/* App Container */
+.app-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Date Input */
+.date-input {
+    width: 250px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Calendar Container */
+.calendar-container {
+    width: 280px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.day-cell {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.day-cell.weekday {
+    background-color: #add8e6;
+}
+
+.day-cell.weekday.selected {
+    background-color: blueviolet;
+    color: white;
+}
+
+.day-cell.weekend {
+    background-color: #f0f0f0;
+    color: #aaa;
+}
+
+.day-cell:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+/* Weekend Dates Section */
+.weekend-dates {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.weekend-dates ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.weekend-dates li {
+    color: #d9534f;
+}
+
+.day-cell.weekday.hovered {
+    background-color: blueviolet;
+    color: white;
+}
+
+.day-cell.weekday.selected {
+    background-color: blueviolet;
+    color: white;
+}
+
+/* Predefined Ranges */
+.predefined-ranges {
+    margin-top: 20px;
+}
+
+.predefined-range-button {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #e7f1fd;
+    color: #0073e6;
+    border: 1px solid #0073e6;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.predefined-range-button:hover {
+    background-color: #0073e6;
+    color: white;
+}
